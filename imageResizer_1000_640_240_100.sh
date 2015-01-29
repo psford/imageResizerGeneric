@@ -57,3 +57,11 @@ for q in *.jpg
 cd ~/Desktop/resizer/100/
 sips -Z 100 *.jpg 
 
+cd ~/Desktop/resizer
+
+if [ ! -d ~/Desktop/resizer/Complete ]
+	then 
+		mkdir ~/Desktop/resizer/Complete
+fi
+
+mv *.jpg ~/Desktop/resizer/Complete
